@@ -1,3 +1,5 @@
+@import "variables";
+@import "typography";
 *,
 *::before,
 *::after {
@@ -7,18 +9,83 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 10px;
   scroll-behavior: smooth;
 }
 
 body {
   font-size: 1.5rem;
-  background-color: hsl(180, 52%, 96%);
+  background-color: $Light-Grayish-Cyan;
 }
-
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
 .header {
   background-image: url("../images/bg-header-mobile.svg");
   background-color: hsl(180, 29%, 50%);
   height: 200px;
   width: 100%;
+}
+.list-reset {
+  list-style: none;
+}
+.align-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.offer {
+  font-size: 1em;
+  margin: 3rem 2rem 2rem;
+  padding: 2em 1em 1em 1em;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  border-left: 0.4rem solid $Desaturated-Dark-Cyan;
+  &__heading {
+    max-width: 250px;
+  }
+
+  &__company-name {
+    font-size: 1em;
+    color: $Desaturated-Dark-Cyan;
+  }
+  &__badges-list {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  &__badge {
+    padding: 0.2em 0.6em;
+    margin: 0 0.3em;
+    color: $white;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    &--black {
+      background-color: #000;
+    }
+    &--cyan {
+      background-color: $Desaturated-Dark-Cyan;
+    }
+  }
+  &__title {
+    font-size: 1em;
+    padding: 0.5em 0;
+  }
+  &__details-list {
+    list-style-position: inside;
+    color: $Dark-Grayish-Cyan;
+  }
+  &__detail {
+    &--no-bullet {
+      list-style: none;
+    }
+    &--margin-left {
+      margin-left: 0.6em;
+    }
+  }
+  &__seperator {
+    height: 1px;
+    background-color: $Dark-Grayish-Cyan;
+    margin: 1rem 0;
+  }
 }

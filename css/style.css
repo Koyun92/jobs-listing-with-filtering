@@ -1,3 +1,7 @@
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -8,7 +12,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 10px;
   scroll-behavior: smooth;
 }
 
@@ -17,10 +21,97 @@ body {
   background-color: #effafa;
 }
 
+.main {
+  max-width: 1200px;
+  margin: auto;
+}
+
 .header {
   background-image: url("../images/bg-header-mobile.svg");
   background-color: #5ba4a4;
   height: 200px;
   width: 100%;
+}
+
+.list-reset {
+  list-style: none;
+}
+
+.align-horizontal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer {
+  font-size: 1em;
+  margin: 3rem 2rem 2rem;
+  padding: 2em 1em 1em 1em;
+  background-color: #fff;
+  border-radius: 0.4rem;
+  border-left: 0.4rem solid #5ba4a4;
+}
+
+.offer__heading {
+  max-width: 250px;
+}
+
+.offer__company-name {
+  font-size: 1em;
+  color: #5ba4a4;
+}
+
+.offer__badges-list {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.offer__badge {
+  padding: 0.2em 0.6em;
+  margin: 0 0.3em;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 2rem;
+}
+
+.offer__badge--black {
+  background-color: #000;
+}
+
+.offer__badge--cyan {
+  background-color: #5ba4a4;
+}
+
+.offer__title {
+  font-size: 1em;
+  padding: 0.5em 0;
+}
+
+.offer__details-list {
+  list-style-position: inside;
+  color: #7b8e8e;
+}
+
+.offer__detail--no-bullet {
+  list-style: none;
+}
+
+.offer__detail--margin-left {
+  margin-left: 0.6em;
+}
+
+.offer__seperator {
+  height: 1px;
+  background-color: #7b8e8e;
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap" rel="stylesheet">
 
   <title>Frontend Mentor | Job Listings</title>
 
@@ -21,34 +22,37 @@
 
 
   </header>
-  <main>
+  <main class="main">
     <article>
-      <section class="job-offer">
-        <header class="job-offer__heading">
+      <section class="offer">
+        <header class="offer__heading">
           <img src="" alt="" class="job-offer__company-logo">
-          <div class="job-offer__inside-box-wrapper">
-            <h2 class="job-offer__company-name">Photosnap</h2>
-            <ul class="job-offer__badges-list">
-              <li class="job-offer__badge">New!</li>
-              <li class="job-offer__badge">Featured</li>
-            </ul>
+          <div class="offer__container">
+            <div class="offer__block align-horizontal">
+              <h2 class="offer__company-name">Photosnap</h2>
+              <ul class="offer__badges-list list-reset align-horizontal">
+                <li class="offer__badge offer__badge--cyan">New!</li>
+                <li class="offer__badge offer__badge--black">Featured</li>
+              </ul>
+            </div>
 
-            <h2 class="job-offer__title"> Senior Frontend Developer</h2>
-            <ul class="job-offer__details-list">
-              <li class="job-offer__detail">1d ago</li>
-              <li class="job-offer__detail"></li> Full Time</li>
-              <li class="job-offer__detail"> USA only </li>
+
+            <h2 class="offer__title"> Senior Frontend Developer</h2>
+            <ul class="offer__details-list  align-horizontal">
+              <li class="offer__detail offer__detail--no-bullet">1d ago</li>
+              <li class="offer__detail offer__detail--margin-left"> Full Time</li>
+              <li class=" offer__detail offer__detail--margin-left"> USA only </li>
             </ul>
           </div>
         </header>
-        <div class="job-offer__seperator"></div>
+        <div class="offer__seperator"></div>
 
-        <ul class="job-offer__requirments-list">
-          <li class="job-offer__requirment">Senior</li>
-          <li class="job-offer__requirment">Frontend</li>
-          <li class="job-offer__requirment">HTML</li>
-          <li class="job-offer__requirment">CSS</li>
-          <li class="job-offer__requirment">JavaScript</li>
+        <ul class="offer__requirments-list list-reset">
+          <li class="offer__requirment">Senior</li>
+          <li class="offer__requirment">Frontend</li>
+          <li class="offer__requirment">HTML</li>
+          <li class="offer__requirment">CSS</li>
+          <li class="offer__requirment">JavaScript</li>
         </ul>
 
 
