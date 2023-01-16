@@ -18,7 +18,7 @@ body {
   background-color: $Light-Grayish-Cyan;
 }
 .main {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: auto;
 }
 .header {
@@ -35,15 +35,32 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
+.cyan-feature {
+  color: $Desaturated-Dark-Cyan;
+  background-color: $Light-Grayish-Cyan;
+}
+.seperator {
+  height: 1px;
+  background-color: $Dark-Grayish-Cyan;
+  margin: 1rem 0;
+}
 .offer {
-  font-size: 1em;
+  position: relative;
   margin: 3rem 2rem 2rem;
   padding: 2em 1em 1em 1em;
   background-color: #fff;
   border-radius: 0.4rem;
   border-left: 0.4rem solid $Desaturated-Dark-Cyan;
+  font-size: 1em;
+
   &__heading {
     max-width: 250px;
+  }
+  &__company-logo {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 0;
+    width: 50px;
   }
 
   &__company-name {
@@ -83,9 +100,23 @@ body {
       margin-left: 0.6em;
     }
   }
-  &__seperator {
-    height: 1px;
-    background-color: $Dark-Grayish-Cyan;
-    margin: 1rem 0;
+
+  &__requirments-list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  &__requirment {
+    cursor: pointer;
+    padding: 0.2em 0.6em;
+    margin: 0.5em 0.4em 0.5em 0;
+  }
+}
+@media (min-width: 800px) {
+  .seperator {
+    display: none;
+  }
+  .offer {
+    display: flex;
+    justify-content: space-between;
   }
 }
